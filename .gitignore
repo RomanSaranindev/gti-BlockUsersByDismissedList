@@ -1,0 +1,33 @@
+# 1С временные файлы
+*.bak
+*.tmp
+*.log
+1Cv8.1CD
+1Cv8.cdn
+1Cv8.lck
+1Cv8.ocl
+1cv8.tmp
+
+# Базы данных 1С (не включаем в репо)
+BitFinans/
+BitFinance/
+
+# IDE
+.vscode/settings.json
+.kilo/
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Тестовые файлы
+AppData/
+
+# Письма Outlook (содержат персональные данные)
+*.msg
+
+# Временные файлы выгрузок (содержат персональные данные сотрудников)
+*.txt
+!README.md
+!CHANGELOG.md

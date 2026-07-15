@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<ExternalDataProcessor uuid="7b04b0df-2873-4f52-b239-e0d2f15b9e8b">
+		<InternalInfo>
+			<xr:ContainedObject>
+				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
+				<xr:ObjectId>ab8add20-aea0-4d3d-9ef9-bd0ef4a77545</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:GeneratedType name="ExternalDataProcessorObject.гти_БлокировкаУволенныхПользователей" category="Object">
+				<xr:TypeId>d554dfbb-ed59-448a-ba0a-c6f7b9f2d936</xr:TypeId>
+				<xr:ValueId>6e19bc3a-b44c-479f-81fc-9e73aaf746a2</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>гти_БлокировкаУволенныхПользователей</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Блокировка уволенных пользователей</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment />
+			<DefaultForm>ExternalDataProcessor.гти_БлокировкаУволенныхПользователей.Form.ФормаОбработки</DefaultForm>
+			<AuxiliaryForm />
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="a1000001-0001-0001-0001-000000000001">
+				<Properties>
+					<Name>КаталогВыгрузки</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Каталог выгрузки</v8:content>
+						</v8:item>
+					</Synonym>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>500</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+		<TabularSection uuid="b1000001-0001-0001-0001-000000000001">
+			<InternalInfo>
+				<xr:GeneratedType name="ExternalDataProcessorTabularSection.гти_БлокировкаУволенныхПользователей.СписокАдминистраторов" category="TabularSection">
+					<xr:TypeId>b2000001-0001-0001-0001-000000000001</xr:TypeId>
+					<xr:ValueId>b2000001-0001-0001-0001-000000000002</xr:ValueId>
+				</xr:GeneratedType>
+				<xr:GeneratedType name="ExternalDataProcessorTabularSectionRow.гти_БлокировкаУволенныхПользователей.СписокАдминистраторов" category="TabularSectionRow">
+					<xr:TypeId>b2000001-0001-0001-0001-000000000003</xr:TypeId>
+					<xr:ValueId>b2000001-0001-0001-0001-000000000004</xr:ValueId>
+				</xr:GeneratedType>
+			</InternalInfo>
+			<Properties>
+				<Name>СписокАдминистраторов</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список администраторов</v8:content>
+						</v8:item>
+					</Synonym>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="b1000001-0001-0001-0001-000000000002">
+						<Properties>
+							<Name>Пользователь</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пользователь</v8:content>
+								</v8:item>
+							</Synonym>
+							<Type>
+								<v8:Type>CatalogRef.Пользователи</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="b1000001-0001-0001-0001-000000000003">
+						<Properties>
+							<Name>АдресЭлектроннойПочты</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адрес эл. почты</v8:content>
+								</v8:item>
+							</Synonym>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>200</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		<TabularSection uuid="c1000001-0001-0001-0001-000000000001">
+			<InternalInfo>
+				<xr:GeneratedType name="ExternalDataProcessorTabularSection.гти_БлокировкаУволенныхПользователей.НайденныеСотрудники" category="TabularSection">
+					<xr:TypeId>c2000001-0001-0001-0001-000000000001</xr:TypeId>
+					<xr:ValueId>c2000001-0001-0001-0001-000000000002</xr:ValueId>
+				</xr:GeneratedType>
+				<xr:GeneratedType name="ExternalDataProcessorTabularSectionRow.гти_БлокировкаУволенныхПользователей.НайденныеСотрудники" category="TabularSectionRow">
+					<xr:TypeId>c2000001-0001-0001-0001-000000000003</xr:TypeId>
+					<xr:ValueId>c2000001-0001-0001-0001-000000000004</xr:ValueId>
+				</xr:GeneratedType>
+			</InternalInfo>
+			<Properties>
+				<Name>НайденныеСотрудники</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Найденные сотрудники</v8:content>
+						</v8:item>
+					</Synonym>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="c1000001-0001-0001-0001-000000000002">
+						<Properties>
+							<Name>Заблокировать</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Заблокировать</v8:content>
+								</v8:item>
+							</Synonym>
+							<Type>
+								<v8:Type>xs:boolean</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="c1000001-0001-0001-0001-000000000003">
+						<Properties>
+							<Name>ФИОИзФайла</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ФИО из файла</v8:content>
+								</v8:item>
+							</Synonym>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>150</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="c1000001-0001-0001-0001-000000000004">
+						<Properties>
+							<Name>Пользователь</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пользователь 1С</v8:content>
+								</v8:item>
+							</Synonym>
+							<Type>
+								<v8:Type>CatalogRef.Пользователи</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="c1000001-0001-0001-0001-000000000005">
+						<Properties>
+							<Name>Должность</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Должность</v8:content>
+								</v8:item>
+							</Synonym>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>300</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="c1000001-0001-0001-0001-000000000006">
+						<Properties>
+							<Name>Организация</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Организация</v8:content>
+								</v8:item>
+							</Synonym>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>300</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="c1000001-0001-0001-0001-000000000007">
+						<Properties>
+							<Name>ДатаПриема</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата приема</v8:content>
+								</v8:item>
+							</Synonym>
+							<Type>
+								<v8:Type>xs:dateTime</v8:Type>
+								<v8:DateQualifiers>
+									<v8:DateFractions>Date</v8:DateFractions>
+								</v8:DateQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="c1000001-0001-0001-0001-000000000008">
+						<Properties>
+							<Name>ДатаУвольнения</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата увольнения</v8:content>
+								</v8:item>
+							</Synonym>
+							<Type>
+								<v8:Type>xs:dateTime</v8:Type>
+								<v8:DateQualifiers>
+									<v8:DateFractions>Date</v8:DateFractions>
+								</v8:DateQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+				<Attribute uuid="c1000001-0001-0001-0001-000000000009">
+					<Properties>
+						<Name>СписокВиз</Name>
+						<Synonym>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Визы</v8:content>
+							</v8:item>
+						</Synonym>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>1000</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Properties>
+				</Attribute>
+				<Attribute uuid="c1000001-0001-0001-0001-000000000010">
+					<Properties>
+						<Name>СписокРолей</Name>
+						<Synonym>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Роли</v8:content>
+							</v8:item>
+						</Synonym>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>1000</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Properties>
+				</Attribute>
+					<Attribute uuid="c1000001-0001-0001-0001-000000000011">
+						<Properties>
+							<Name>ПометкаПеревода</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Переведён</v8:content>
+								</v8:item>
+							</Synonym>
+							<Type>
+								<v8:Type>xs:boolean</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="c1000001-0001-0001-0001-000000000012">
+						<Properties>
+							<Name>ДругиеМестаРаботы</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Другие места работы</v8:content>
+								</v8:item>
+							</Synonym>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>500</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="c1000001-0001-0001-0001-000000000013">
+						<Properties>
+							<Name>Статус</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Статус</v8:content>
+								</v8:item>
+							</Synonym>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>200</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="c1000001-0001-0001-0001-000000000014">
+						<Properties>
+							<Name>НайденВБазе</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Найден в базе</v8:content>
+								</v8:item>
+							</Synonym>
+							<Type>
+								<v8:Type>xs:boolean</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<Form>ФормаОбработки</Form>
+		</ChildObjects>
+	</ExternalDataProcessor>
+</MetaDataObject>

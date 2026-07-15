@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраниц" id="1">
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Page name="СтраницаРабочаяОбласть" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рабочая область</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаРабочаяОбластьРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКнопокРабочей" id="5">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаКнопокРабочейРасширеннаяПодсказка" id="6"/>
+							<ChildItems>
+								<Button name="КнопкаЗагрузитьСписок" id="7">
+									<CommandName>Form.Command.ЗагрузитьСписок</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Загрузить список</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="КнопкаЗагрузитьСписокРасширеннаяПодсказка" id="8"/>
+								</Button>
+								<Button name="КнопкаВыполнитьБлокировку" id="9">
+									<CommandName>Form.Command.ВыполнитьБлокировку</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выполнить блокировку</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="КнопкаВыполнитьБлокировкуРасширеннаяПодсказка" id="10"/>
+								</Button>
+								<Button name="КнопкаПоставитьВсеОтметки" id="11">
+									<CommandName>Form.Command.ПоставитьВсеОтметки</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отметить все</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="КнопкаПоставитьВсеОтметкиРасширеннаяПодсказка" id="12"/>
+								</Button>
+								<Button name="КнопкаСнятьВсеОтметки" id="13">
+									<CommandName>Form.Command.СнятьВсеОтметки</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Снять все отметки</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="КнопкаСнятьВсеОтметкиРасширеннаяПодсказка" id="14"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ТаблицаНайденныеСотрудники" id="15">
+							<DataPath>Объект.НайденныеСотрудники</DataPath>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ContextMenu name="ТаблицаНайденныеСотрудникиКонтекстноеМеню" id="16"/>
+							<AutoCommandBar name="ТаблицаНайденныеСотрудникиКоманднаяПанель" id="17"/>
+							<ExtendedTooltip name="ТаблицаНайденныеСотрудникиРасширеннаяПодсказка" id="18"/>
+							<SearchStringAddition name="ТаблицаНайденныеСотрудникиСтрокаПоиска" id="19">
+								<AdditionSource>
+									<Item>ТаблицаНайденныеСотрудники</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаНайденныеСотрудникиСтрокаПоискаКонтекстноеМеню" id="20"/>
+								<ExtendedTooltip name="ТаблицаНайденныеСотрудникиСтрокаПоискаРасширеннаяПодсказка" id="21"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаНайденныеСотрудникиСостояниеПросмотра" id="22">
+								<AdditionSource>
+									<Item>ТаблицаНайденныеСотрудники</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаНайденныеСотрудникиСостояниеПросмотраКонтекстноеМеню" id="23"/>
+								<ExtendedTooltip name="ТаблицаНайденныеСотрудникиСостояниеПросмотраРасширеннаяПодсказка" id="24"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаНайденныеСотрудникиУправлениеПоиском" id="25">
+								<AdditionSource>
+									<Item>ТаблицаНайденныеСотрудники</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаНайденныеСотрудникиУправлениеПоискомКонтекстноеМеню" id="26"/>
+								<ExtendedTooltip name="ТаблицаНайденныеСотрудникиУправлениеПоискомРасширеннаяПодсказка" id="27"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="НайденныеСотрудникиЗаблокировать" id="28">
+									<DataPath>Объект.НайденныеСотрудники.Заблокировать</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>✓</v8:content>
+										</v8:item>
+									</Title>
+									<Width>4</Width>
+									<ContextMenu name="НайденныеСотрудникиЗаблокироватьКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="НайденныеСотрудникиЗаблокироватьРасширеннаяПодсказка" id="30"/>
+								</InputField>
+								<InputField name="НайденныеСотрудникиФИОИзФайла" id="31">
+									<DataPath>Объект.НайденныеСотрудники.ФИОИзФайла</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ФИО из файла</v8:content>
+										</v8:item>
+									</Title>
+									<Width>25</Width>
+									<ContextMenu name="НайденныеСотрудникиФИОИзФайлаКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="НайденныеСотрудникиФИОИзФайлаРасширеннаяПодсказка" id="33"/>
+								</InputField>
+								<InputField name="НайденныеСотрудникиПользователь" id="34">
+									<DataPath>Объект.НайденныеСотрудники.Пользователь</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пользователь 1С</v8:content>
+										</v8:item>
+									</Title>
+									<Width>25</Width>
+									<ContextMenu name="НайденныеСотрудникиПользовательКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="НайденныеСотрудникиПользовательРасширеннаяПодсказка" id="36"/>
+								</InputField>
+								<InputField name="НайденныеСотрудникиДолжность" id="37">
+									<DataPath>Объект.НайденныеСотрудники.Должность</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Должность</v8:content>
+										</v8:item>
+									</Title>
+									<Width>30</Width>
+									<ContextMenu name="НайденныеСотрудникиДолжностьКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="НайденныеСотрудникиДолжностьРасширеннаяПодсказка" id="39"/>
+								</InputField>
+								<InputField name="НайденныеСотрудникиОрганизация" id="40">
+									<DataPath>Объект.НайденныеСотрудники.Организация</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Организация</v8:content>
+										</v8:item>
+									</Title>
+									<Width>30</Width>
+									<ContextMenu name="НайденныеСотрудникиОрганизацияКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="НайденныеСотрудникиОрганизацияРасширеннаяПодсказка" id="42"/>
+								</InputField>
+								<InputField name="НайденныеСотрудникиДатаПриема" id="43">
+									<DataPath>Объект.НайденныеСотрудники.ДатаПриема</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата приёма</v8:content>
+										</v8:item>
+									</Title>
+									<Width>10</Width>
+									<ContextMenu name="НайденныеСотрудникиДатаПриемаКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="НайденныеСотрудникиДатаПриемаРасширеннаяПодсказка" id="45"/>
+								</InputField>
+								<InputField name="НайденныеСотрудникиДатаУвольнения" id="46">
+									<DataPath>Объект.НайденныеСотрудники.ДатаУвольнения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата увольнения</v8:content>
+										</v8:item>
+									</Title>
+									<Width>10</Width>
+									<ContextMenu name="НайденныеСотрудникиДатаУвольненияКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="НайденныеСотрудникиДатаУвольненияРасширеннаяПодсказка" id="48"/>
+								</InputField>
+								<InputField name="НайденныеСотрудникиСписокВиз" id="49">
+									<DataPath>Объект.НайденныеСотрудники.СписокВиз</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Визы</v8:content>
+										</v8:item>
+									</Title>
+									<Width>25</Width>
+									<ContextMenu name="НайденныеСотрудникиСписокВизКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="НайденныеСотрудникиСписокВизРасширеннаяПодсказка" id="51"/>
+								</InputField>
+								<InputField name="НайденныеСотрудникиСписокРолей" id="52">
+									<DataPath>Объект.НайденныеСотрудники.СписокРолей</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Роли</v8:content>
+										</v8:item>
+									</Title>
+									<Width>25</Width>
+									<ContextMenu name="НайденныеСотрудникиСписокРолейКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="НайденныеСотрудникиСписокРолейРасширеннаяПодсказка" id="54"/>
+								</InputField>
+								<InputField name="НайденныеСотрудникиПометкаПеревода" id="55">
+									<DataPath>Объект.НайденныеСотрудники.ПометкаПеревода</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перевод</v8:content>
+										</v8:item>
+									</Title>
+									<Width>7</Width>
+									<ContextMenu name="НайденныеСотрудникиПометкаПереводаКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="НайденныеСотрудникиПометкаПереводаРасширеннаяПодсказка" id="57"/>
+								</InputField>
+								<InputField name="НайденныеСотрудникиДругиеМестаРаботы" id="58">
+									<DataPath>Объект.НайденныеСотрудники.ДругиеМестаРаботы</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Другие места работы</v8:content>
+										</v8:item>
+									</Title>
+									<Width>30</Width>
+									<ContextMenu name="НайденныеСотрудникиДругиеМестаРаботыКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="НайденныеСотрудникиДругиеМестаРаботыРасширеннаяПодсказка" id="60"/>
+								</InputField>
+								<InputField name="НайденныеСотрудникиСтатус" id="61">
+									<DataPath>Объект.НайденныеСотрудники.Статус</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус</v8:content>
+										</v8:item>
+									</Title>
+									<Width>25</Width>
+									<ContextMenu name="НайденныеСотрудникиСтатусКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="НайденныеСотрудникиСтатусРасширеннаяПодсказка" id="63"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаНастройки" id="64">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаНастройкиРасширеннаяПодсказка" id="65"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКаталог" id="66">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Источник данных</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>true</ShowTitle>
+							<ExtendedTooltip name="ГруппаКаталогРасширеннаяПодсказка" id="67"/>
+							<ChildItems>
+								<InputField name="ПолеКаталогВыгрузки" id="68">
+									<DataPath>Объект.КаталогВыгрузки</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Каталог выгрузки</v8:content>
+										</v8:item>
+									</Title>
+									<Width>60</Width>
+									<ContextMenu name="ПолеКаталогВыгрузкиКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="ПолеКаталогВыгрузкиРасширеннаяПодсказка" id="70"/>
+								</InputField>
+								<Button name="КнопкаВыбратьКаталог" id="71">
+									<CommandName>Form.Command.ВыбратьКаталог</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>...</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="КнопкаВыбратьКаталогРасширеннаяПодсказка" id="72"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаАдминистраторы" id="73">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Администраторы (получатели лога)</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<ShowTitle>true</ShowTitle>
+							<ExtendedTooltip name="ГруппаАдминистраторыРасширеннаяПодсказка" id="74"/>
+							<ChildItems>
+								<Table name="ТаблицаАдминистраторы" id="75">
+									<DataPath>Объект.СписокАдминистраторов</DataPath>
+									<ChangeRowSet>true</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<CommandBarLocation>Top</CommandBarLocation>
+									<ContextMenu name="ТаблицаАдминистраторыКонтекстноеМеню" id="76"/>
+									<AutoCommandBar name="ТаблицаАдминистраторыКоманднаяПанель" id="77"/>
+									<ExtendedTooltip name="ТаблицаАдминистраторыРасширеннаяПодсказка" id="78"/>
+									<SearchStringAddition name="ТаблицаАдминистраторыСтрокаПоиска" id="79">
+										<AdditionSource>
+											<Item>ТаблицаАдминистраторы</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаАдминистраторыСтрокаПоискаКонтекстноеМеню" id="80"/>
+										<ExtendedTooltip name="ТаблицаАдминистраторыСтрокаПоискаРасширеннаяПодсказка" id="81"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ТаблицаАдминистраторыСостояниеПросмотра" id="82">
+										<AdditionSource>
+											<Item>ТаблицаАдминистраторы</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаАдминистраторыСостояниеПросмотраКонтекстноеМеню" id="83"/>
+										<ExtendedTooltip name="ТаблицаАдминистраторыСостояниеПросмотраРасширеннаяПодсказка" id="84"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ТаблицаАдминистраторыУправлениеПоиском" id="85">
+										<AdditionSource>
+											<Item>ТаблицаАдминистраторы</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ТаблицаАдминистраторыУправлениеПоискомКонтекстноеМеню" id="86"/>
+										<ExtendedTooltip name="ТаблицаАдминистраторыУправлениеПоискомРасширеннаяПодсказка" id="87"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="АдминистраторыПользователь" id="88">
+											<DataPath>Объект.СписокАдминистраторов.Пользователь</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пользователь</v8:content>
+												</v8:item>
+											</Title>
+											<Width>30</Width>
+											<ContextMenu name="АдминистраторыПользовательКонтекстноеМеню" id="89"/>
+											<ExtendedTooltip name="АдминистраторыПользовательРасширеннаяПодсказка" id="90"/>
+										</InputField>
+										<InputField name="АдминистраторыАдресЭлектроннойПочты" id="91">
+											<DataPath>Объект.СписокАдминистраторов.АдресЭлектроннойПочты</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Адрес эл. почты</v8:content>
+												</v8:item>
+											</Title>
+											<Width>35</Width>
+											<ContextMenu name="АдминистраторыАдресЭлектроннойПочтыКонтекстноеМеню" id="92"/>
+											<ExtendedTooltip name="АдминистраторыАдресЭлектроннойПочтыРасширеннаяПодсказка" id="93"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаКнопокНастроек" id="94">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаКнопокНастроекРасширеннаяПодсказка" id="95"/>
+							<ChildItems>
+								<Button name="КнопкаСохранитьНастройки" id="96">
+									<CommandName>Form.Command.СохранитьНастройки</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сохранить настройки</v8:content>
+										</v8:item>
+									</Title>
+									<DefaultButton>true</DefaultButton>
+									<ExtendedTooltip name="КнопкаСохранитьНастройкиРасширеннаяПодсказка" id="97"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="98">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.гти_БлокировкаУволенныхПользователей</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьСписок" id="99">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить список</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ЗагрузитьСписок</Action>
+		</Command>
+		<Command name="ВыполнитьБлокировку" id="100">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить блокировку</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ВыполнитьБлокировку</Action>
+		</Command>
+		<Command name="ПоставитьВсеОтметки" id="101">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поставить все отметки</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоставитьВсеОтметки</Action>
+		</Command>
+		<Command name="СнятьВсеОтметки" id="102">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все отметки</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СнятьВсеОтметки</Action>
+		</Command>
+		<Command name="ВыбратьКаталог" id="103">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать каталог</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ВыбратьКаталог</Action>
+		</Command>
+		<Command name="СохранитьНастройки" id="104">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СохранитьНастройки</Action>
+		</Command>
+	</Commands>
+</Form>
