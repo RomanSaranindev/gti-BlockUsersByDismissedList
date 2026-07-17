@@ -334,6 +334,34 @@
 							</Type>
 						</Properties>
 					</Attribute>
+					<Attribute uuid="c1000001-0001-0001-0001-000000000015">
+						<Properties>
+							<Name>ОрганизацияВБазе</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Организация (1С)</v8:content>
+								</v8:item>
+							</Synonym>
+							<Type>
+								<v8:Type>CatalogRef.Организации</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="c1000001-0001-0001-0001-000000000016">
+						<Properties>
+							<Name>ОрганизацияПослеПеревода</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Организация после перевода (1С)</v8:content>
+								</v8:item>
+							</Synonym>
+							<Type>
+								<v8:Type>CatalogRef.Организации</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
 				</ChildObjects>
 			</TabularSection>
 			<Form>ФормаОбработки</Form>

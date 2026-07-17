@@ -148,19 +148,33 @@
 									<ContextMenu name="НайденныеСотрудникиДолжностьКонтекстноеМеню" id="38"/>
 									<ExtendedTooltip name="НайденныеСотрудникиДолжностьРасширеннаяПодсказка" id="39"/>
 								</InputField>
-								<InputField name="НайденныеСотрудникиОрганизация" id="40">
-									<DataPath>Объект.НайденныеСотрудники.Организация</DataPath>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Организация</v8:content>
-										</v8:item>
-									</Title>
-									<Width>30</Width>
-									<ContextMenu name="НайденныеСотрудникиОрганизацияКонтекстноеМеню" id="41"/>
-									<ExtendedTooltip name="НайденныеСотрудникиОрганизацияРасширеннаяПодсказка" id="42"/>
-								</InputField>
-								<InputField name="НайденныеСотрудникиДатаПриема" id="43">
+							<InputField name="НайденныеСотрудникиОрганизация" id="40">
+								<DataPath>Объект.НайденныеСотрудники.Организация</DataPath>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Организация (файл)</v8:content>
+									</v8:item>
+								</Title>
+								<Width>30</Width>
+								<ReadOnly>true</ReadOnly>
+								<ContextMenu name="НайденныеСотрудникиОрганизацияКонтекстноеМеню" id="41"/>
+								<ExtendedTooltip name="НайденныеСотрудникиОрганизацияРасширеннаяПодсказка" id="42"/>
+							</InputField>
+							<InputField name="НайденныеСотрудникиОрганизацияВБазе" id="105">
+								<DataPath>Объект.НайденныеСотрудники.ОрганизацияВБазе</DataPath>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Организация (1С)</v8:content>
+									</v8:item>
+								</Title>
+								<Width>25</Width>
+								<ReadOnly>true</ReadOnly>
+								<ContextMenu name="НайденныеСотрудникиОрганизацияВБазеКонтекстноеМеню" id="106"/>
+								<ExtendedTooltip name="НайденныеСотрудникиОрганизацияВБазеРасширеннаяПодсказка" id="107"/>
+							</InputField>
+							<InputField name="НайденныеСотрудникиДатаПриема" id="43">
 									<DataPath>Объект.НайденныеСотрудники.ДатаПриема</DataPath>
 									<Title>
 										<v8:item>
@@ -208,19 +222,32 @@
 									<ContextMenu name="НайденныеСотрудникиСписокРолейКонтекстноеМеню" id="53"/>
 									<ExtendedTooltip name="НайденныеСотрудникиСписокРолейРасширеннаяПодсказка" id="54"/>
 								</InputField>
-								<InputField name="НайденныеСотрудникиПометкаПеревода" id="55">
-									<DataPath>Объект.НайденныеСотрудники.ПометкаПеревода</DataPath>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Перевод</v8:content>
-										</v8:item>
-									</Title>
-									<Width>7</Width>
-									<ContextMenu name="НайденныеСотрудникиПометкаПереводаКонтекстноеМеню" id="56"/>
-									<ExtendedTooltip name="НайденныеСотрудникиПометкаПереводаРасширеннаяПодсказка" id="57"/>
-								</InputField>
-								<InputField name="НайденныеСотрудникиДругиеМестаРаботы" id="58">
+							<InputField name="НайденныеСотрудникиПометкаПеревода" id="55">
+								<DataPath>Объект.НайденныеСотрудники.ПометкаПеревода</DataPath>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Перевод</v8:content>
+									</v8:item>
+								</Title>
+								<Width>7</Width>
+								<ContextMenu name="НайденныеСотрудникиПометкаПереводаКонтекстноеМеню" id="56"/>
+								<ExtendedTooltip name="НайденныеСотрудникиПометкаПереводаРасширеннаяПодсказка" id="57"/>
+							</InputField>
+							<InputField name="НайденныеСотрудникиОрганизацияПослеПеревода" id="108">
+								<DataPath>Объект.НайденныеСотрудники.ОрганизацияПослеПеревода</DataPath>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Орг. после перевода</v8:content>
+									</v8:item>
+								</Title>
+								<Width>25</Width>
+								<ReadOnly>true</ReadOnly>
+								<ContextMenu name="НайденныеСотрудникиОрганизацияПослеПереводаКонтекстноеМеню" id="109"/>
+								<ExtendedTooltip name="НайденныеСотрудникиОрганизацияПослеПереводаРасширеннаяПодсказка" id="110"/>
+							</InputField>
+							<InputField name="НайденныеСотрудникиДругиеМестаРаботы" id="58">
 									<DataPath>Объект.НайденныеСотрудники.ДругиеМестаРаботы</DataPath>
 									<Title>
 										<v8:item>
